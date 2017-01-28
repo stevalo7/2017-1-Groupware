@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ulatina.Topicos.Calentamien
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ulatina.Topicos.Calentamiento.Tests", "Ulatina.Topicos.Calentamiento.Tests\Ulatina.Topicos.Calentamiento.Tests.csproj", "{0B53959E-79EF-4D83-99BF-ABF1ECB745D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ulatina.Topicos.Calculadora.BL", "Ulatina.Topicos.Calculadora\Ulatina.Topicos.Calculadora.BL.csproj", "{0887B64C-357C-44F2-8DE8-6C61A636D5CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0B53959E-79EF-4D83-99BF-ABF1ECB745D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B53959E-79EF-4D83-99BF-ABF1ECB745D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B53959E-79EF-4D83-99BF-ABF1ECB745D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0887B64C-357C-44F2-8DE8-6C61A636D5CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0887B64C-357C-44F2-8DE8-6C61A636D5CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0887B64C-357C-44F2-8DE8-6C61A636D5CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0887B64C-357C-44F2-8DE8-6C61A636D5CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
