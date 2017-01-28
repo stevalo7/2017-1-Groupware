@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ulatina.Topicos.Calentamiento", "Ulatina.Topicos.Calentamiento\Ulatina.Topicos.Calentamiento.csproj", "{572589B5-4FD8-4D6C-BD72-00D967005E0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ulatina.Topicos.Calentamiento.Tests", "Ulatina.Topicos.Calentamiento.Tests\Ulatina.Topicos.Calentamiento.Tests.csproj", "{0B53959E-79EF-4D83-99BF-ABF1ECB745D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{572589B5-4FD8-4D6C-BD72-00D967005E0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{572589B5-4FD8-4D6C-BD72-00D967005E0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{572589B5-4FD8-4D6C-BD72-00D967005E0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{572589B5-4FD8-4D6C-BD72-00D967005E0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B53959E-79EF-4D83-99BF-ABF1ECB745D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B53959E-79EF-4D83-99BF-ABF1ECB745D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B53959E-79EF-4D83-99BF-ABF1ECB745D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B53959E-79EF-4D83-99BF-ABF1ECB745D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
