@@ -167,8 +167,8 @@ window.matchMedia = window.matchMedia || (function(doc, undefined){
 						media	: thisq.split( "(" )[ 0 ].match( /(only\s+)?([a-zA-Z]+)\s?/ ) && RegExp.$2 || "all",
 						rules	: rules.length - 1,
 						hasquery: thisq.indexOf("(") > -1,
-						minw	: thisq.match( /\(min\-width:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/ ) && parseFloat( RegExp.$1 ) + ( RegExp.$2 || "" ), 
-						maxw	: thisq.match( /\(max\-width:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/ ) && parseFloat( RegExp.$1 ) + ( RegExp.$2 || "" )
+						minw	: thisq.match( /\(min\-width:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/ ) && parsedouble( RegExp.$1 ) + ( RegExp.$2 || "" ), 
+						maxw	: thisq.match( /\(max\-width:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/ ) && parsedouble( RegExp.$1 ) + ( RegExp.$2 || "" )
 					} );
 				}	
 			}
@@ -208,7 +208,7 @@ window.matchMedia = window.matchMedia || (function(doc, undefined){
 			}
 			
 			//also update eminpx before returning
-			ret = eminpx = parseFloat(ret);
+			ret = eminpx = parsedouble(ret);
 								
 			return ret;
 		},
@@ -244,10 +244,10 @@ window.matchMedia = window.matchMedia || (function(doc, undefined){
 					em = "em";
 				
 				if( !!min ){
-					min = parseFloat( min ) * ( min.indexOf( em ) > -1 ? ( eminpx || getEmValue() ) : 1 );
+					min = parsedouble( min ) * ( min.indexOf( em ) > -1 ? ( eminpx || getEmValue() ) : 1 );
 				}
 				if( !!max ){
-					max = parseFloat( max ) * ( max.indexOf( em ) > -1 ? ( eminpx || getEmValue() ) : 1 );
+					max = parsedouble( max ) * ( max.indexOf( em ) > -1 ? ( eminpx || getEmValue() ) : 1 );
 				}
 				
 				// if there's no media query at all (the () part), or min or max is not null, and if either is present, they're true

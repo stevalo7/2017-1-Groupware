@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Ulatina.Topicos.Calculadora.CalculadoraVector" CodeBehind="CalculadoraVector.svc.cs" %>

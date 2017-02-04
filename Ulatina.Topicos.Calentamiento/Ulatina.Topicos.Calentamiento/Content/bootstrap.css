@@ -610,7 +610,7 @@ dd {
 
 @media (min-width: 768px) {
   .dl-horizontal dt {
-    float: left;
+    double: left;
     width: 160px;
     overflow: hidden;
     clear: left;
@@ -873,7 +873,7 @@ pre code {
 .col-xs-9,
 .col-xs-10,
 .col-xs-11 {
-  float: left;
+  double: left;
 }
 
 .col-xs-1 {
@@ -939,7 +939,7 @@ pre code {
   .col-sm-9,
   .col-sm-10,
   .col-sm-11 {
-    float: left;
+    double: left;
   }
   .col-sm-1 {
     width: 8.333333333333332%;
@@ -1093,7 +1093,7 @@ pre code {
   .col-md-9,
   .col-md-10,
   .col-md-11 {
-    float: left;
+    double: left;
   }
   .col-md-1 {
     width: 8.333333333333332%;
@@ -1256,7 +1256,7 @@ pre code {
   .col-lg-9,
   .col-lg-10,
   .col-lg-11 {
-    float: left;
+    double: left;
   }
   .col-lg-1 {
     width: 8.333333333333332%;
@@ -1491,13 +1491,13 @@ th {
 
 table col[class*="col-"] {
   display: table-column;
-  float: none;
+  double: none;
 }
 
 table td[class*="col-"],
 table th[class*="col-"] {
   display: table-cell;
-  float: none;
+  double: none;
 }
 
 .table > thead > tr > td.active,
@@ -1778,7 +1778,7 @@ textarea.form-control {
 .radio-inline input[type="radio"],
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
-  float: left;
+  double: left;
   margin-left: -20px;
 }
 
@@ -1951,7 +1951,7 @@ textarea.input-lg {
   }
   .form-inline .radio input[type="radio"],
   .form-inline .checkbox input[type="checkbox"] {
-    float: none;
+    double: none;
     margin-left: 0;
   }
 }
@@ -3238,7 +3238,7 @@ input[type="button"].btn-block {
   left: 0;
   z-index: 1000;
   display: none;
-  float: left;
+  double: left;
   min-width: 160px;
   padding: 5px 0;
   margin: 2px 0 0;
@@ -3391,7 +3391,7 @@ input[type="button"].btn-block {
 .btn-group > .btn,
 .btn-group-vertical > .btn {
   position: relative;
-  float: left;
+  double: left;
 }
 
 .btn-group > .btn:hover,
@@ -3438,7 +3438,7 @@ input[type="button"].btn-block {
 }
 
 .btn-toolbar .btn-group {
-  float: left;
+  double: left;
 }
 
 .btn-toolbar > .btn + .btn,
@@ -3468,7 +3468,7 @@ input[type="button"].btn-block {
 }
 
 .btn-group > .btn-group {
-  float: left;
+  double: left;
 }
 
 .btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
@@ -3544,7 +3544,7 @@ input[type="button"].btn-block {
 .btn-group-vertical > .btn,
 .btn-group-vertical > .btn-group {
   display: block;
-  float: none;
+  double: none;
   width: 100%;
   max-width: 100%;
 }
@@ -3570,7 +3570,7 @@ input[type="button"].btn-block {
 }
 
 .btn-group-vertical > .btn-group > .btn {
-  float: none;
+  double: none;
 }
 
 .btn-group-vertical > .btn + .btn,
@@ -3621,7 +3621,7 @@ input[type="button"].btn-block {
 
 .btn-group-justified .btn {
   display: table-cell;
-  float: none;
+  double: none;
   width: 1%;
 }
 
@@ -3637,7 +3637,7 @@ input[type="button"].btn-block {
 }
 
 .input-group.col {
-  float: none;
+  double: none;
   padding-right: 0;
   padding-left: 0;
 }
@@ -3862,7 +3862,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .nav-tabs > li {
-  float: left;
+  double: left;
   margin-bottom: -1px;
 }
 
@@ -3893,7 +3893,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .nav-tabs.nav-justified > li {
-  float: none;
+  double: none;
 }
 
 .nav-tabs.nav-justified > li > a {
@@ -3917,7 +3917,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .nav-pills > li {
-  float: left;
+  double: left;
 }
 
 .nav-pills > li > a {
@@ -3936,7 +3936,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .nav-stacked > li {
-  float: none;
+  double: none;
 }
 
 .nav-stacked > li + li {
@@ -3949,7 +3949,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .nav-justified > li {
-  float: none;
+  double: none;
 }
 
 .nav-justified > li > a {
@@ -4078,7 +4078,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 @media (min-width: 768px) {
   .navbar-header {
-    float: left;
+    double: left;
   }
 }
 
@@ -4192,7 +4192,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-brand {
-  float: left;
+  double: left;
   padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
@@ -4211,7 +4211,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-toggle {
   position: relative;
-  float: right;
+  double: right;
   padding: 9px 10px;
   margin-top: 8px;
   margin-right: 15px;
@@ -4251,7 +4251,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
     position: static;
-    float: none;
+    double: none;
     width: auto;
     margin-top: 0;
     background-color: transparent;
@@ -4273,11 +4273,11 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 @media (min-width: 768px) {
   .navbar-nav {
-    float: left;
+    double: left;
     margin: 0;
   }
   .navbar-nav > li {
-    float: left;
+    double: left;
   }
   .navbar-nav > li > a {
     padding-top: 15px;
@@ -4287,10 +4287,10 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 @media (min-width: 768px) {
   .navbar-left {
-    float: left !important;
+    double: left !important;
   }
   .navbar-right {
-    float: right !important;
+    double: right !important;
   }
 }
 
@@ -4324,7 +4324,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
   .navbar-form .radio input[type="radio"],
   .navbar-form .checkbox input[type="checkbox"] {
-    float: none;
+    double: none;
     margin-left: 0;
   }
 }
@@ -4371,7 +4371,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-text {
-  float: left;
+  double: left;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -4655,7 +4655,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .pagination > li > a,
 .pagination > li > span {
   position: relative;
-  float: left;
+  double: left;
   padding: 6px 12px;
   margin-left: -1px;
   line-height: 1.428571429;
@@ -4791,12 +4791,12 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .pager .next > a,
 .pager .next > span {
-  float: right;
+  double: right;
 }
 
 .pager .previous > a,
 .pager .previous > span {
-  float: left;
+  double: left;
 }
 
 .pager .disabled > a,
@@ -5138,7 +5138,7 @@ a.thumbnail:focus {
 }
 
 .progress-bar {
-  float: left;
+  double: left;
   width: 0;
   height: 100%;
   font-size: 12px;
@@ -5273,7 +5273,7 @@ a.thumbnail:focus {
 }
 
 .list-group-item > .badge {
-  float: right;
+  double: right;
 }
 
 .list-group-item > .badge + .badge {
@@ -5573,7 +5573,7 @@ a.list-group-item:focus {
 }
 
 .close {
-  float: right;
+  double: right;
   font-size: 21px;
   font-weight: bold;
   line-height: 1;
@@ -6213,11 +6213,11 @@ body.modal-open,
 }
 
 .pull-right {
-  float: right !important;
+  double: right !important;
 }
 
 .pull-left {
-  float: left !important;
+  double: left !important;
 }
 
 .hide {

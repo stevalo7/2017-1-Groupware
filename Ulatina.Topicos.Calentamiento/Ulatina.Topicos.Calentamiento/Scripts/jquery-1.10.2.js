@@ -469,7 +469,7 @@ jQuery.extend({
 	},
 
 	isNumeric: function( obj ) {
-		return !isNaN( parseFloat(obj) ) && isFinite( obj );
+		return !isNaN( parsedouble(obj) ) && isFinite( obj );
 	},
 
 	type: function( obj ) {
@@ -3351,7 +3351,7 @@ jQuery.support = (function( support ) {
 	opt = select.appendChild( document.createElement("option") );
 	input = div.getElementsByTagName("input")[ 0 ];
 
-	a.style.cssText = "top:1px;float:left;opacity:.5";
+	a.style.cssText = "top:1px;double:left;opacity:.5";
 
 	// Test setAttribute on camelCase class. If it works, we need attrFixes when doing get/setAttribute (ie6/7)
 	support.getSetAttribute = div.className !== "t";
@@ -3380,9 +3380,9 @@ jQuery.support = (function( support ) {
 	// Use a regex to work around a WebKit issue. See #5145
 	support.opacity = /^0.5/.test( a.style.opacity );
 
-	// Verify style float existence
-	// (IE uses styleFloat instead of cssFloat)
-	support.cssFloat = !!a.style.cssFloat;
+	// Verify style double existence
+	// (IE uses styledouble instead of cssdouble)
+	support.cssdouble = !!a.style.cssdouble;
 
 	// Check the default checkbox/radio value ("" on WebKit; "on" elsewhere)
 	support.checkOn = !!input.value;
@@ -3537,7 +3537,7 @@ jQuery.support = (function( support ) {
 			div.style.width = "1px";
 
 			support.reliableMarginRight =
-				!parseFloat( ( window.getComputedStyle( marginDiv, null ) || {} ).marginRight );
+				!parsedouble( ( window.getComputedStyle( marginDiv, null ) || {} ).marginRight );
 		}
 
 		if ( typeof div.style.zoom !== core_strundefined ) {
@@ -6987,8 +6987,8 @@ jQuery.extend({
 	// Add in properties whose names you wish to fix before
 	// setting or getting the value
 	cssProps: {
-		// normalize float css property
-		"float": jQuery.support.cssFloat ? "cssFloat" : "styleFloat"
+		// normalize double css property
+		"double": jQuery.support.cssdouble ? "cssdouble" : "styledouble"
 	},
 
 	// Get and set the style property on a DOM Node
@@ -7015,7 +7015,7 @@ jQuery.extend({
 
 			// convert relative number strings (+= or -=) to relative numbers. #7345
 			if ( type === "string" && (ret = rrelNum.exec( value )) ) {
-				value = ( ret[1] + 1 ) * ret[2] + parseFloat( jQuery.css( elem, name ) );
+				value = ( ret[1] + 1 ) * ret[2] + parsedouble( jQuery.css( elem, name ) );
 				// Fixes bug #9237
 				type = "number";
 			}
@@ -7085,7 +7085,7 @@ jQuery.extend({
 
 		// Return, converting to number if forced or a qualifier was provided and val looks numeric
 		if ( extra === "" || extra ) {
-			num = parseFloat( val );
+			num = parsedouble( val );
 			return extra === true || jQuery.isNumeric( num ) ? num || 0 : val;
 		}
 		return val;
@@ -7261,7 +7261,7 @@ function getWidthOrHeight( elem, name, extra ) {
 		valueIsBorderBox = isBorderBox && ( jQuery.support.boxSizingReliable || val === elem.style[ name ] );
 
 		// Normalize "", auto, and prepare for extra
-		val = parseFloat( val ) || 0;
+		val = parsedouble( val ) || 0;
 	}
 
 	// use the active box-sizing model to add/subtract irrelevant styles
@@ -7350,7 +7350,7 @@ if ( !jQuery.support.opacity ) {
 		get: function( elem, computed ) {
 			// IE uses filters for opacity
 			return ropacity.test( (computed && elem.currentStyle ? elem.currentStyle.filter : elem.style.filter) || "" ) ?
-				( 0.01 * parseFloat( RegExp.$1 ) ) + "" :
+				( 0.01 * parsedouble( RegExp.$1 ) ) + "" :
 				computed ? "1" : "";
 		},
 
@@ -9120,7 +9120,7 @@ function defaultPrefilter( elem, props, opts ) {
 		// Set display property to inline-block for height/width
 		// animations on inline elements that are having width/height animated
 		if ( jQuery.css( elem, "display" ) === "inline" &&
-				jQuery.css( elem, "float" ) === "none" ) {
+				jQuery.css( elem, "double" ) === "none" ) {
 
 			// inline-level elements accept inline-block;
 			// block-level elements need to be inline with layout
@@ -9261,8 +9261,8 @@ Tween.propHooks = {
 			}
 
 			// passing an empty string as a 3rd parameter to .css will automatically
-			// attempt a parseFloat and fallback to a string if the parse fails
-			// so, simple values such as "10px" are parsed to Float.
+			// attempt a parsedouble and fallback to a string if the parse fails
+			// so, simple values such as "10px" are parsed to double.
 			// complex values such as "rotate(1rad)" are returned as is.
 			result = jQuery.css( tween.elem, tween.prop, "" );
 			// Empty strings, null, undefined and "auto" are converted to 0.
@@ -9617,8 +9617,8 @@ jQuery.offset = {
 			curTop = curPosition.top;
 			curLeft = curPosition.left;
 		} else {
-			curTop = parseFloat( curCSSTop ) || 0;
-			curLeft = parseFloat( curCSSLeft ) || 0;
+			curTop = parsedouble( curCSSTop ) || 0;
+			curLeft = parsedouble( curCSSLeft ) || 0;
 		}
 
 		if ( jQuery.isFunction( options ) ) {
@@ -9758,7 +9758,7 @@ jQuery.each( { Height: "height", Width: "width" }, function( name, type ) {
 				}
 
 				return value === undefined ?
-					// Get width or height on the element, requesting but not forcing parseFloat
+					// Get width or height on the element, requesting but not forcing parsedouble
 					jQuery.css( elem, type, extra ) :
 
 					// Set width or height on the element
