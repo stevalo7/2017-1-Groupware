@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ulatina.Topicos.Calculadora
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ulatina.Topicos.Calculadora.Tests", "Ulatina.Topicos.Calculadora.Tests\Ulatina.Topicos.Calculadora.Tests.csproj", "{348148CE-84CC-4EAC-BFCA-8EFA5C0F763B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ulatina.Topicos.AdventureWorks.Model", "Ulatina.Topicos.AdventureWorks.Model\Ulatina.Topicos.AdventureWorks.Model.csproj", "{2BD5E0E8-A190-48DE-A27D-898F5BD6FDFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{348148CE-84CC-4EAC-BFCA-8EFA5C0F763B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{348148CE-84CC-4EAC-BFCA-8EFA5C0F763B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{348148CE-84CC-4EAC-BFCA-8EFA5C0F763B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BD5E0E8-A190-48DE-A27D-898F5BD6FDFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BD5E0E8-A190-48DE-A27D-898F5BD6FDFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BD5E0E8-A190-48DE-A27D-898F5BD6FDFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BD5E0E8-A190-48DE-A27D-898F5BD6FDFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
