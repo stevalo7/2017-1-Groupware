@@ -24,7 +24,7 @@ namespace Ulatina.Topicos.AdventureWorks.Model
                         elResultado = "error";
                 }
                 else
-                    elResultado = "unidad desconocida";
+                    elResultado = "unidad desconocida 1";
                 return elResultado;
             }  }
     }
